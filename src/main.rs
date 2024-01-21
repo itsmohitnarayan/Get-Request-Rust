@@ -1,4 +1,12 @@
-error_chain
+use error_chain::error_chain;
+use std::io::Read;
+
+error_chain! {
+    foreign_links{
+        Io(std::io::Error);
+        HttpRequest(Reqwest::Error);
+    }
+}
 
 fn main() -> Result<()>{
     let mut res = reqwest::blocking::get()?;
