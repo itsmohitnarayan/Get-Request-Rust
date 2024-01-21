@@ -13,7 +13,7 @@ A simple Rust project to make HTTP GET requests using the `reqwest` crate, handl
 2. Navigate to the project directory:
 
     ```bash
-    cd getrequest
+    cd Get-Request-Rust   
     ```
 
 3. Build and run the project:
